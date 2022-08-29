@@ -17,7 +17,8 @@ configMapGenerator:
   name: catalog-config
 images:
 - name: catalog-service
-  newTag: c882608216fd81be8cfb013ab2333611a203c4fc
+  newName: ghcr.io/cboschmans-code/catalog-service
+  newTag: 487c3d91a9509259656b5ac678ce6a6e838fe88d
 
 replicas:
 - count: 2
