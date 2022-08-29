@@ -10,7 +10,7 @@ jobs:
     permissions:
       contents: write
     env:
-      APP_IMAGE: ${{ github.event.client_pauload.app_image }}
+      APP_IMAGE: ${{ github.event.client_payload.app_image }}
       APP_NAME: ${{ github.event.client_payload.app_name }}
       APP_VERSION: ${{ github.event.client_payload.app_version }}
     steps:
