@@ -31,7 +31,6 @@ resources:
     cpu: 0.2
     memory: 750Mi
   limits:
-    cpu: 2
     memory: 750Mi
 service:
   type: LoadBalancer
