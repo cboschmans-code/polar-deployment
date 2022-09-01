@@ -1,0 +1,14 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: polar-cluster
+  region: eu-central-1
+
+fargateProfiles:
+  - name: fp-services
+    selectors:
+      - namespace: services
+      - namespace: frontend
+      - namespace: argocd
+
