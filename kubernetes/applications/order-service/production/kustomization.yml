@@ -18,7 +18,7 @@ configMapGenerator:
 images:
 - name: order-service
   newName: ghcr.io/cboschmans-code/order-service
-  newTag: b44f032a5e4258501e8bc65aceb5d130766d2607
+  newTag: 30dbf54164cc614905b7e45fffd2dc56f4ce7572
 
 replicas:
 - count: 1
