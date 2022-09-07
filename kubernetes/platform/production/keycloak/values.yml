@@ -21,7 +21,7 @@ readinessProbe:
   httpGet:
     path: /realms/master
     port: 8080
-  initialDelaySeconds: 30
+  initialDelaySeconds: 120
   periodSeconds: 10
   timeoutSeconds: 1
   failureThreshold: 3
@@ -35,3 +35,9 @@ resources:
 service:
   type: LoadBalancer
   port: 80
+  annotations:
+    alb.ingress.kubernetes.io/target-type: ip
+volumePermissions:
+  enabled: true
+ingress:
+  enabled: true

@@ -3,6 +3,8 @@ kind: Ingress
 metadata:
   name: polar-ingress
   annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
     nginx.ingress.kubernetes.io/server-snippet: |
       location ~* "^/actuator" {
         deny all;

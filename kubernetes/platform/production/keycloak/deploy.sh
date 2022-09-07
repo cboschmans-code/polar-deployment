@@ -15,7 +15,7 @@ echo "\n📦 Configuring Helm chart..."
 
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm upgrade --install polar-keycloak bitnami/keycloak \
-  --values values.yml \
+  --values values.yml --set volumePermissions.enabled=true\
   --namespace keycloak-system
 
 echo "\n⌛ Waiting for Keycloak to be deployed..."
