@@ -19,7 +19,7 @@ configMapGenerator:
 images:
 - name: edge-service
   newName: ghcr.io/cboschmans-code/edge-service
-  newTag: 3af6028b1c20dc387f00fcd4ccec04d7d1e1b2da
+  newTag: 58a08afab53eef4e546bce9a1cf80385aa1e6c87
 
 replicas:
 - count: 1
