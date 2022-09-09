@@ -18,7 +18,7 @@ configMapGenerator:
 images:
 - name: dispatcher-service
   newName: ghcr.io/cboschmans-code/dispatcher-service
-  newTag: 8246b45a7f69836e2da1da999d1e20e7e81dc39c
+  newTag: 9942ab694226ac624405980eadfdbaafeb33fb3b
 
 replicas:
 - count: 1
